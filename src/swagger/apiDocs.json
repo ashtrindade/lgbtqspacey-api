@@ -17,7 +17,7 @@
   "servers": [
     {
       "url": "",
-      "description": "Rapid API"
+      "description": ""
     }
   ],
   "paths": {
