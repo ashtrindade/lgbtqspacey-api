@@ -1,0 +1,523 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "LGBTQ+Spacey API",
+    "description": "API versão pt-BR",
+    "version": "1.0.0",
+    "termsOfService": "https://lgbtqspacey.com/copyright/",
+    "contact": {
+      "name": "LGBTQ+Spacey",
+      "email": "contato@lgbtqspacey.com"
+    },
+    "license": {
+      "name": "API License: MIT",
+      "url": "https://github.com/ashtrindade/lgbtqspacey-api/blob/main/LICENSE.md"
+    }
+  },
+  "servers": [
+    {
+      "url": "",
+      "description": "Rapid API"
+    }
+  ],
+  "paths": {
+    "/feed": {
+      "get": {
+        "tags": [
+          "Posts Recentes"
+        ],
+        "summary": "Retorna posts recentes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/acessibilidade": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Acessibilidade",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/anuncio": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Anúncio",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/arromanticidade": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Arromanticidade",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/assexualidade": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Assexualidade",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/atracao": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Atração",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/feminismo": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Feminismo",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/genero": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Gênero",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/guias": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Guias",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/historia": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria História",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/neurodivergencia": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Neurodivergência",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/raca": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Raça",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/resenhas": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Resenhas",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/sexualidade": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Sexualidade",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/sociedade": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Sociedade",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/category/spacey-indica": {
+      "get": {
+        "tags": [
+          "Categorias"
+        ],
+        "summary": "Retorna posts recentes da categoria Spacey Indica",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/feedSchema"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed",
+            "content": {
+              "application/json": {
+                "example": "Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "feedSchema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "generator": {
+            "type": "string"
+          },
+          "published": {
+            "type": "string"
+          },
+          "entries": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "published": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
